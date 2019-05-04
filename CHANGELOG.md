@@ -1,3 +1,11 @@
+# 0.3.0
+
+* Added argument `output_buffer_size` to `multicore.Pool.imap_batches()`
+  and `multicore.Pool.imap_batches_unordered()` to control the maximum number
+  of batches in the background augmentation pipeline (allows to limit
+  maximum RAM demands).
+
+
 # master (will probably be 0.2.9)
 
 * Fix possible crash in `blend.blend_alpha()` if dtype numpy.float128 does not exist.
